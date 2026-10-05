@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Опрос студентов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<form action="#" method="post">
+
+    <h1>Опрос студентов</h1>
+    <p class="intro">Что вы думаете об обучении в университете?</p>
+
+    <fieldset>
+        <legend>Общая информация</legend>
+
+        <table>
+            <tr>
+                <td><label for="name">Имя:</label></td>
+                <td>
+                    <input type="text" id="name" name="name"
+                            required>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="course">Курс:</label></td>
+                <td>
+                    <input type="number" id="course" name="course"
+                           min="1" max="6" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="email">E-mail:</label></td>
+                <td>
+                    <input type="email" id="email" name="email"
+                           placeholder="example@mail.ru" required>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <fieldset>
+        <legend>Ваше мнение</legend>
+
+        <table>
+            <tr>
+                <td>Как вы оцениваете обучение?</td>
+                <td>
+                    <label>
+                        <input type="radio" name="mark" value="5" checked>
+                        Отлично
+                    </label><br>
+
+                    <label>
+                        <input type="radio" name="mark" value="4">
+                        Хорошо
+                    </label><br>
+
+                    <label>
+                        <input type="radio" name="mark" value="3">
+                        Удовлетворительно
+                    </label><br>
+
+                    <label>
+                        <input type="radio" name="mark" value="2">
+                        Плохо
+                    </label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Что вам нравится в университете?</td>
+                <td>
+                    <label>
+                        <input type="checkbox" name="like1">
+                        Интересные предметы
+                    </label><br>
+
+                    <label>
+                        <input type="checkbox" name="like2">
+                        Преподаватели
+                    </label><br>
+
+                    <label>
+                        <input type="checkbox" name="like3">
+                        Студенческая жизнь
+                    </label><br>
+
+                    <label>
+                        <input type="checkbox" name="like4">
+                        Практические занятия
+                    </label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="visit">Как часто посещаете занятия?</label>
+                </td>
+                <td>
+                    <select id="visit" name="visit">
+                        <option selected>Практически всегда</option>
+                        <option>Часто</option>
+                        <option>Иногда</option>
+                        <option>Редко</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="load">Оцените учебную нагрузку:</label>
+                </td>
+                <td>
+                    <input type="range" id="rank" name="load"
+                           min="1" max="10" value="7">
+                    <br>
+                    <small>От 1 до 10</small>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="text">Что бы вы хотели изменить?</label>
+                </td>
+                <td>
+                    <textarea id="text" name="text"
+                              rows="5"
+                              placeholder="Ваш ответ..."></textarea>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <div class="buttons">
+        <button type="submit">Отправить</button>
+        <button type="reset">Очистить</button>
+    </div>
+
+</form>
+
+</body>
+</html>

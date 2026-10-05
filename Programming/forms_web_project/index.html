@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Формы</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form method="get" action="#" oninput="out.value = rank.value">
+            <fieldset>
+            <legend>Основные вопросы</legend>
+            <label class="space">Ваше имя</label>
+            <input type="text"/ required>
+            <label class="space">Ваша фамилия</label>
+            <input type="text"/ required>
+            <label class="space">Ваш логин</label>
+            <input type="text"/ required>
+            <label class="space">Ваш пароль</label>
+            <input type="password"/ required>
+            <div class="radios">
+                <p>Выберите ваш возраст:</p>
+                <div>
+                    <input type="radio" name="age" value="1" id="var1">
+                    <label for="var1">от 10 до 20 лет</label>
+                </div> 
+                <div>
+                    <input type="radio" name="age" value="2" id="var2">
+                    <label for="var2">от 20 до 45 лет</label>
+                 </div>
+                 <div>   
+                    <input type="radio" name="age" value="3" id="var3">
+                    <label for="var3">от 45 до 60 лет</label>
+                </div>
+                <span>1</span>
+                <input type="range" min="1" max="10" id="rank">
+                <label>10</label>
+                <output name="out">1</output>
+            </div>
+            </div>
+            <div class="buttons">
+                <input type="submit" value="Зарегистрироваться">
+                <input type="reset" value="Сбросить">
+            </fieldset>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+body { 
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: antiquewhite;
+    font-size: 16pt;
+}
+
+input {
+    font-size: 16pt;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(18, 19, 18);
+}
+
+.space, input[type="text"], input[type = "password"] {
+    display: block;
+    width: 80%;
+    padding: 10px;
+    margin: 5px auto;
+}
+
+form {
+    width: 60%;
+    margin: 20px auto;
+}
+
+.buttons {
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+input[type="submit"], input[type="reset"] {
+    width: 45%;
+    margin: 10px;
+    padding: 10px;background-color: rgb(231, 129, 127);
+}
+
+.buttons, .radios{
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+}
